@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { VStack } from 'native-base';
 import firestore from '@react-native-firebase/firestore';
 import { Alert } from 'react-native';
@@ -36,9 +36,7 @@ export function Register() {
       console.log(error);
       setIsLoading(false);
       return Alert.alert("Solicitação", "Não foi possível registrar o pedido.")
-    })
-
-
+    });
   }
 
   return (
