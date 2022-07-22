@@ -28,8 +28,7 @@ export function Home() {
   }
 
   function handleOpenDetails(orderId: string) {
-    navigation.navigate('details', { orderId });
-    console.log("details");
+    navigation.navigate('details', { orderId });    
   }
   
   return (
